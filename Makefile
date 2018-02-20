@@ -5,8 +5,8 @@ ODIR = bin
 SDIR = src
 INC = -Iinc
 
-_OBJS = main.o Separator.o Base.o CMD.o And.o \
-    	Or.o Test.o
+_OBJS = main.o Separator.o Base.o CMD.o\
+    	Test.o
 OBJS = $(patsubst %,$(ODIR)/%,$(_OBJS))
 
 all: $(ODIR)/rshell
